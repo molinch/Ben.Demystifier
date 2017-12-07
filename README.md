@@ -1,3 +1,10 @@
+# Ben.Demystifier (with Roslyn Scripting API compatibility)
+
+The whole point of this fork is simply to be able to use both Roslyn Scripting API and Ben.Demystifier when both are strongnamed (to strongname Ben.Demystifier you can use strongnamer Nuget package).
+
+So far this is not working since Ben.Demystifier requires System.Reflection.Metadata 1.5.0 which requires System.Collections.Immutable 1.4.0.
+And Microsoft.CodeAnalysis.CSharp.Scripting brings System.Collections.Immutable 1.3.1.
+
 # Ben.Demystifier
 
 [![NuGet version (Ben.Demystifier)](https://img.shields.io/nuget/v/Ben.Demystifier.svg?style=flat-square)](https://www.nuget.org/packages/Ben.Demystifier/)
